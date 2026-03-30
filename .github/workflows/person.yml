@@ -1,5 +1,9 @@
 name: personal file
 
+on:
+  push:
+     branches: [main]
+
 jobs:
 
   personal_details :

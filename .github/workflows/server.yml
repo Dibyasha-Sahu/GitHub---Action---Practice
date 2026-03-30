@@ -1,0 +1,39 @@
+name: server
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+   nested_object:
+     runs-on: ubuntu-latest
+     
+     steps:
+         - name : app-server
+           run : echo "name of the server"
+
+         - name : ip
+           run : echo " the ip is 192.168.1.10 "
+
+         - name : port
+           run : echo "the port number is 8080"
+
+   Database:
+       runs-on: ubuntu-latest
+
+       steps: 
+          - name : host
+            run : echo " the host name is db.local"
+
+          - name : database_name
+            run : echo " the name of the database is appdb"
+
+          - name: credential - user_name
+            run: echo "the credential user name"
+
+          - name: credential - password
+            run: echo "the password is {secret123}"
+            
+       
+          
+           

@@ -2,22 +2,21 @@ name: personal file
 
 on:
   push:
-     branches: [main]
+    branches: [main]
 
 jobs:
+  personal_details:
+    runs-on: ubuntu-latest
 
-  personal_details :
-  
-   runs-on : ubuntu-latest
-   steps:
-      - name : name of the username
-        run : echo "Hello to $User
+    steps:
+      - name: name of the username
+        run: echo "Hello to $USER"
 
-      - name : user role
-        run : echo "Role of the user"
+      - name: user role
+        run: echo "Role of the user"
 
-      - name : user experience
-        run : echo "user experience"
+      - name: user experience
+        run: echo "user experience"
 
-      - name : user learning
-        run : echo "user learning = true"
+      - name: user learning
+        run: echo "user learning = true"

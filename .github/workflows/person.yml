@@ -1,0 +1,19 @@
+name: personal file
+
+jobs:
+
+  personal_details :
+  
+   runs-on : ubuntu-latest
+   steps:
+      - name : name of the username
+        run : echo "Hello to $user
+
+      - name : user role
+        run : echo "Role of the user"
+
+      - name : user experience
+        run : echo "user experience"
+
+      - name : user learning
+        run : echo "user learning = true"

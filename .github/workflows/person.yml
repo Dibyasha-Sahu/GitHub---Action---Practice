@@ -25,13 +25,13 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        - name: [GIT , Jenkins , GitLab]
+        - name: ("GIT" , "Jenkins" , "GitLab")
           run: echo "show the tools of the user"
 
   hobbies:
       runs-on: ubuntu-latest
 
       steps:
-         - name: [drawing,playing,reading]
+         - name: ("drawing","playing","reading")
            run: echo "users hobbies"
         

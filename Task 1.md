@@ -29,7 +29,7 @@ Validate both your YAML files
 Intentionally break the indentation — what error do you get?
 Fix it and validate again
 
- - I completed task from 1 to 3 ,you can look after the folder .github/workflows
+ - I completed task from 1 to 3 ,you can look after the folder .github/workflows and the file name is person.yml nad server.yml
  - To complete the task 4 you have to
    
            - clone the repo to vs code

@@ -27,4 +27,77 @@ For this we need to know CI/CD automation so it can check the code , run it and 
 again ,no manual deploying easy and safe.
 
 
+## Task 2: CI vs CD
+
+Continuous Integration — what happens, how often, what it catches
+
+     - Continuous Integration means developers regularly (daily or many times a day) add their code to a shared project.
+       Each time code is added, it is automatically tested and checked.
+       It helps to catch bugs early before they become big problems.
+          
+       What it catches:
+          - Code errors
+          - Integration issues (when different parts don’t work together)
+          
+       Real-world example:
+          - A team pushes code to GitHub → GitHub Actions automatically runs tests → if something breaks, developer knows immediately.
+
+Continuous Delivery — how it's different from CI, what "delivery" means
+
+       - Continuous Delivery means after CI, the code is always kept ready to release.
+         The system automatically builds and tests the app, but deployment is done manually.
+         “Delivery” means the software is prepared and ready for production anytime.
+
+       - Real-world example:
+            After testing, the app is ready and waiting → team clicks a button to deploy on AWS or server. 
+
+Continuous Deployment — how it differs from Delivery, when teams use it
+
+       - After testing, the code is automatically deployed to users without manual approval.
+         Every change goes live quickly.
+
+       - Real-world example:
+         You push code → tests pass → website updates automatically (like updates on Netflix or Facebook).  
+
+
+## Task 3: Pipeline Anatomy
+
+A pipeline has these parts — write what each one does:
+
+Trigger — what starts the pipeline
+
+      - Trigger is what starts the pipeline.
+
+        Example:
+          
+          When you push code to GitHub
+          When you create a pull request
+
+Stage — a logical phase (build, test, deploy)
+
+     - Stage is a big step or phase in the pipeline.
+
+       Common stages:
+          
+          Build
+          Test
+          Deploy
+          
+Job — a unit of work inside a stage
+
+    - Job is a task inside a stage.
+    
+Step — a single command or action inside a job
+
+     - Smallest action (one command)
+     
+Runner — the machine that executes the job
+
+    - it means each machine has runner to know in which server it will run like ubuntu server or self-hosted server
+    
+Artifact — output produced by a job
+
+Trigger → Stage → Job → Step → Runner → Artifact
+
+
 

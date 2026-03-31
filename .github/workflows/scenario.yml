@@ -1,0 +1,37 @@
+# A developer pushes code to GitHub. The app is tested, built into a Docker image, and deployed to a staging server.
+
+name: scenario
+
+on: 
+  workflow_dispatch:
+
+jobs:
+
+   test_app:
+     runs-on: ubuntu-latest
+     steps:
+        - name: app running
+          run: echo "pipeline is working-directory"
+
+   build:
+      runs-on: ubuntu-latest
+      needs: [test_app]
+      steps:
+         - name: app is build
+           run: echo "building app"
+
+   Docker:
+        runs-on: ubuntu-latest
+        needs: [build]
+        steps:
+           - name: docker image
+             run: docker build -t myapp . 
+
+   deploy:
+       runs-on: ubuntu-latest
+       needs: Docker
+       steps:
+         - name: deply at server
+           run: echo "deploying at staging server"
+  
+  

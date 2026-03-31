@@ -13,5 +13,5 @@ on:
 
         -name: Deploying the page
           run: echo"display the page"
-        with:
-          publish_dir: . 
+          with:
+            publish_dir: . 

@@ -100,4 +100,13 @@ Artifact — output produced by a job
 Trigger → Stage → Job → Step → Runner → Artifact
 
 
+## Task 4: Draw a Pipeline
+
+Draw a CI/CD pipeline for this scenario:
+
+A developer pushes code to GitHub. The app is tested, built into a Docker image, and deployed to a staging server.
+
+      - Go to the .github/workflow/scenario.yml
+
+
 

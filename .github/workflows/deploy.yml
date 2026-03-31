@@ -1,17 +1,15 @@
 ---
-name: Deploy protfolio
+name: Deploy portfolio
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
-  jobs:
-    deploy:
-      runs-on: ubuntu-latest
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-      steps:
-        uses: action/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-        -name: Deploying the page
-          run: echo"display the page"
-        with:
-          publish_dir: . 
+      - name: Deploying the page
+        run: echo "display the page"

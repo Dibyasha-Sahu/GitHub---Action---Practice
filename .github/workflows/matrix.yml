@@ -1,7 +1,7 @@
 name: Matrix Workflow
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
   jobs:
     matrix-job:

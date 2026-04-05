@@ -16,3 +16,29 @@ Create a new branch, push a commit, and open a PR
 
 Watch the workflow run automatically
 
+## Task 2: Scheduled Trigger
+
+Add a schedule: trigger to any workflow using cron syntax
+
+           - Cron syntax consists of 5 fields:
+
+                Minute  Hour  Day_of_Month  Month  Day_of_Week
+
+                How 0 0 * * * works:
+                0: At the 0th minute.
+
+                0: At the 0th hour (Midnight).
+
+                *** *** ***: Every day, every month, every day of the week
+
+Set it to run every day at midnight UTC
+
+            - Cron ' 0 0 * * * '
+
+Write in your notes: What is the cron expression for every Monday at 9 AM?
+
+            - Cron '0 9 * * 1'
+
+
+
+

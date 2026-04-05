@@ -1,14 +1,15 @@
-name: Pull Request Check
+name: Schedule and Pull Request Check
 
 on:
   pull_request:
-    branches:
-      - main
-    types: [opened, synchronize, reopened]
+    branches: [main]
+       schedule:
+        -cron: '0  0 * * *'
+    
 
 jobs:
   PR-Checking:
     runs-on: ubuntu-latest
     steps:
       - name: print branch name
-        run: echo "PR check running for branch:${{ github.head_ref }}"
+        run: echo "PR check running for branch:${{ github.head_ref || 'Scheduled Run'}}"

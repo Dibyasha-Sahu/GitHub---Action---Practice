@@ -2,7 +2,7 @@ name: Manual Deployment Trigger
 
 on:
   workflow_dispatch:
-  input:
+   input:
     enviroment:
       description: "Select the environment to deploy to"
       required: true

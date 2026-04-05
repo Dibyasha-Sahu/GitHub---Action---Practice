@@ -1,7 +1,7 @@
 name: Pull Request Check
 
 on:
-  pull-request:
+    pull-request:
          branches: [main]
            - types: [opened , synchronize, reopened]
 
@@ -11,6 +11,6 @@ jobs:
 
        steps:
           - name: print branch name
-            run: echo"PR check running for branch:${{ github.head_ref }}"
-            
+            run: echo "PR check running for branch:${{ github.head_ref }}"
+
                       

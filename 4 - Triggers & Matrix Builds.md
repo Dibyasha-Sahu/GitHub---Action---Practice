@@ -40,5 +40,27 @@ Write in your notes: What is the cron expression for every Monday at 9 AM?
             - Cron '0 9 * * 1'
 
 
+## Task 3: Manual Trigger
+
+Create .github/workflows/manual.yml with a workflow_dispatch: trigger
+Add an input that asks for an environment name (staging/production)
+Print the input value in a step
+
+         - You can go to .github/workflows/manual.yml
+
+
+         - Here I use the enviroment , this typically a placeholder that swap itself when user choose something or select option
+
+           Like an example:-
+              - you as a customer go to resturent and hold the tabelet to select menu maually
+              - it contain some input like what you want with their specific options
+              - when you choose the options or if you don't choose they set some default options too (if you confuse or you don't want to choose)
+              - after all this you send the message to kitchen what they will see ex -{want medium baked food}in their ticket
+
+              This is how enviroment work.
+              
+Go to the Actions tab → find the workflow → click Run workflow            
+
+
 
 
